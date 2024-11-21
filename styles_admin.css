@@ -1,0 +1,312 @@
+
+html {
+    background-color: pink;
+}
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+#container {
+    position: relative;
+    top: 25px; /* Réglez la position top à 0 pour aligner le container en haut de la page */
+    left: 45px; /* Réglez la position left à 0 pour aligner le container sur la gauche de la page */
+    width: 95%; /* Définissez la largeur du container à 100% pour qu'il prenne toute la largeur de la page */
+    height: 95vh; /* Utilisez 100vh pour spécifier que le container doit prendre 100% de la hauteur de la fenêtre du navigateur */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45), 0 8px 8px rgba(0, 32, 63, .45);
+}
+
+/* Styles pour l'image */
+img {
+    position: absolute;
+    top: -13%;
+    left: 35px;
+    width: 160px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+
+#banniere {
+    position: relative;
+    width: 88%;
+    height: 120px;
+    margin: 0px auto 50px auto;
+    background-color: white;
+    padding-left: 161px;
+    padding-right: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45), 0 8px 8px rgba(0, 32, 63, .45);
+}
+
+nav{
+    width: 70%;
+    height: 120px;
+    font-size:23px;
+    margin: 0px auto 50px auto;
+    position: relative;
+    border-radius: 10px;
+    top: 0px;
+    left: -5%;
+}
+
+nav a {
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    color: inherit; /* Utilise la couleur héritée (définie dans le parent) pour les liens */
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    padding-top: 40px;
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.container {
+    position: relative;
+    top: 130px;
+    left: -5%;
+    overflow: hidden;
+    min-height: 680px;
+    width: 600px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45),
+            0 8px 8px rgba(0, 32, 63, .45);
+}
+
+.form-group {
+    margin-bottom: 65px;
+    
+}
+
+#genderSelect {
+    position: relative;
+    top: 10px;
+    background-color: pink;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 15px;
+    margin: 1px;
+    width: 80%;
+    font-size: 15px;
+    margin-left: 60px
+    
+}
+
+#ageCategorySelect{
+    position: relative;
+    top: 10px;
+    left:33px;
+    background-color: pink;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 15px;
+    margin: 1px;
+    width: 20%;
+    font-size: 15px;
+    margin-left: 30px
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 60px;
+}
+
+
+
+
+h1{
+    margin-top:50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#imagerencontre {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    width: 100%;
+    height: 764px;
+    display: block;
+    max-width: 100%;
+}
+
+
+/* bannière abonnement*/
+.banner {
+    position:absolute;
+    top:1109px;
+    left: 0px;
+    background-color: pink; /* Couleur rose pour la bannière */
+    width: 100%; /* Prend toute la largeur du site */
+    text-align: center; /* Centrer le contenu */
+    padding: 50px 0; /* Ajouter un peu d'espace autour du texte */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .premium-offer {
+    text-decoration: none; /* Supprimer la soulignement du lien */
+    color: white; /* Couleur du texte en blanc */
+  }
+  
+  .premium-offer h2 {
+    font-size: 24px; /* Taille de la police pour le titre */
+  }
+  
+  .premium-offer p {
+    margin: 5px 0; /* Ajouter un peu d'espace entre les paragraphes */
+  }
+  
+
+  /* barre de recherche*/
+  input[type="text"] {
+    position: relative;
+    top: 10px;
+    background-color: pink;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 15px;
+    margin: 1px;
+    width: 80%;
+    font-size: 15px;
+    margin-left: 60px;
+}
+
+
+
+
+p{
+    font-size: 15px; 
+}
+
+
+#container_profils {
+    position: absolute;
+    top: 122px;
+    left: 0px;
+    width: 100%;
+    height: 81vh;
+    display: block;
+    max-width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ 
+    overflow-y: scroll;
+}
+
+.containerp2  {
+   
+    top: 10%;
+    left: 20%;
+    font-size: 17px;
+    margin-left: 44%;
+    margin-top: 40px;
+    margin-left: 18%;
+}
+
+.profil{
+    position: relative;
+    top: 10px;
+    left:33px;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 15px;
+    margin: 1px;
+    width: 20%;
+    font-size: 15px;
+    margin-left: 30px
+}
+
+
+
+.nom{
+    top : 20%;
+}
+
+.conteneur-utilisateur {
+    margin-bottom: -200px; /* ou toute autre valeur de marge inférieure souhaitée */
+}
+.imageprofil {
+    position : relative;
+    text-align: center; /* Centrer l'image */
+    
+    
+}
+
+.imageprofil img {
+    position : relative;
+    bottom: 200px;
+    
+    left: 30%;
+    width:15%; /* Taille de l'image */
+    height: auto;
+    display: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.prenom{
+    top : 10%;
+}
+
+boutonsupprimer:hover {
+    background-color: rgb(255, 0, 43);
+}
+
+boutonsupprimer:active {
+    background-color: rgb(248, 3, 44);
+}
+.boutonsupprimer{
+    position: relative;
+    background-color: rgb(238, 92, 117);
+    border-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    padding: 16px 32px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    margin-left:60px;
+    margin-top: 30px;
+}

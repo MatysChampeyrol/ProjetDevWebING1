@@ -1,0 +1,150 @@
+
+html {
+    background-color: rgb(211, 159, 168);
+}
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+#containerSwipe {
+    display: flex;
+    position:absolute;
+    align-items: top;
+    justify-content: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw; /* 7&0% de la largeur de l'écran */
+    height: 70vh; /* 16:9 ratio, basé sur la largeur */
+    max-width: calc(70vh * 16/9); /* pour conserver un format 16:9 */
+    max-height: calc(70vw*9/16); /* pour conserver un format 16:9 */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45), 0 8px 8px rgba(0, 32, 63, .45);
+    transition: left 0.3s ease;
+}
+
+
+
+#galeriePretendant{
+    overflow: scroll;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+    width: calc(0.3*vw);
+    max-width: calc(0.3*70vh * 16/9) ;
+    height: 100%;
+    
+    background-color: antiquewhite;
+}
+#galeriePretendant img {
+    position: relative;
+    overflow-y: auto;
+    height:auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    object-position: cover;
+
+}
+#photoPretendant{
+    width : auto;
+    height: auto;
+}
+#descriptionPersonne{
+    overflow: scroll;
+    width: calc(0.6*70vw*16/9);
+    max-width: calc(0.7*70vh * 16/9);
+    height: 100%;
+    padding: 3%;
+}
+#descriptoionPersonne > section > span{
+    background-color: lightgrey; /* Couleur de fond gris pour les balises <span> */
+    padding: 5px 10px; /* Ajoute un peu de remplissage pour améliorer l'apparence */
+    margin-right: 5px; /* Ajoute une marge à droite pour séparer les balises <span> */
+    display: inline-block;
+}
+
+#descriptionPersonne h1{
+    margin: 1%;
+    border-radius: 10px;
+    background-color: beige;
+    width: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#oui {
+    display: flex;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 85%;
+    left: 60%;
+}
+
+
+#oui img {
+    width: 70px;
+    height: 70px;
+}
+
+#non {
+    display: flex;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 85%;
+    left: 40%;
+     
+}
+
+
+#non img {
+    width: 70px;
+    height: 70px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0); /* Couleur de fond du footer */
+    color: black; /* Couleur du texte du footer */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+.footer-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav ul li:last-child {
+    margin-right: 0; /* Supprime le marging droit du dernier élément */
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: black;
+}

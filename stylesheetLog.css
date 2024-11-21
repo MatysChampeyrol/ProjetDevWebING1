@@ -1,0 +1,213 @@
+html {
+    background-color: rgb(211, 159, 168);
+}
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+#container {
+    position: relative;
+    top: 25px; /* Réglez la position top à 0 pour aligner le container en haut de la page */
+    left: 45px; /* Réglez la position left à 0 pour aligner le container sur la gauche de la page */
+    width: 95%; /* Définissez la largeur du container à 100% pour qu'il prenne toute la largeur de la page */
+    height:95vh; /* Utilisez 100vh pour spécifier que le container doit prendre 100% de la hauteur de la fenêtre du navigateur */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45), 0 8px 8px rgba(0, 32, 63, .45);
+}
+
+/* Styles pour l'image */
+img {
+    position: absolute;
+    top: -13%;
+    left: 35px;
+    width: 160px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+#banniere {
+    position: relative;
+    width: 88%;
+    height: 120px;
+    margin: 0px auto 50px auto;
+    background-color: white;
+    padding-left: 161px;
+    padding-right: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#inscription button {
+    position: absolute;
+    top: 20px;
+    left: 81%;
+    background-color: white;
+    color: black;
+    border: 1px solid pink;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 24px;
+    margin-top: 24px;
+    margin-left: 30px;
+    border-radius: 50px;
+    border-color: black;
+    transition: .2s ease-in;
+}
+
+#inscription button:hover {
+    cursor: pointer;
+    background-color: pink;
+    color: white;
+}
+
+#inscription button a {
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    color: inherit; /* Utilise la couleur héritée (définie dans le parent) pour les liens */
+}
+
+nav{
+    width: 70%;
+    height: 120px;
+    font-size: 23px;
+    margin: 0px auto 50px auto;
+    position: relative;
+    border-radius: 10px;
+    top: 0px;
+    left: -10%;
+}
+
+nav a {
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    color: inherit; /* Utilise la couleur héritée (définie dans le parent) pour les liens */
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    padding-top: 40px;
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+#imagerencontre {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    width: 100%;
+    height: 750px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    display: block;
+    max-width: 100%;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container2 {
+    position: absolute;
+    top: 300px;
+    left: 110px;
+    overflow: hidden;
+    min-height: 360px;
+    width: 580px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45),
+            0 8px 8px rgba(0, 32, 63, .45);
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height:100%;
+}
+
+.se-connecter {
+    left: 0;
+    width:100%;
+}
+
+form {
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 350px;
+    text-align: center;
+}
+
+input {
+    position: relative;
+    top: 20px;
+    background-color: pink;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 15px;
+    margin: 15px 0;
+    width: 100%;
+    font-size: 15px;
+}
+
+#connection button {
+    position: relative;
+    top: 15px;
+    left: 0;
+    background-color: pink;
+    color: black;
+    border: 1px solid pink;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 32px;
+    margin-top: 39px;
+    border-radius: 50px;
+    border-color: black;
+    transition: .2s ease-in;
+}
+
+
+
+h1 {
+    position: relative;
+    font-family: sans-serif;
+    position: relative;
+    top: 0px;
+    margin: 0;
+    font-size: 28px;
+}

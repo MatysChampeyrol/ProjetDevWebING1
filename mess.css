@@ -1,0 +1,177 @@
+
+html {
+    background-color: rgb(211, 159, 168);
+}
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+#container {
+    position: relative;
+    top: 25px; /* Réglez la position top à 0 pour aligner le container en haut de la page */
+    left: 45px; /* Réglez la position left à 0 pour aligner le container sur la gauche de la page */
+    width: 95%; /* Définissez la largeur du container à 100% pour qu'il prenne toute la largeur de la page */
+    height:95vh; /* Utilisez 100vh pour spécifier que le container doit prendre 100% de la hauteur de la fenêtre du navigateur */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45), 0 8px 8px rgba(0, 32, 63, .45);
+}
+#banniere {
+    position: relative;
+    width: 88%;
+    height: 120px;
+    margin: 0px auto 50px auto;
+    background-color: white;
+    padding-left: 161px;
+    padding-right: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45), 0 8px 8px rgba(0, 32, 63, .45);
+}
+
+img {
+    position: absolute;
+    top: -13%;
+    left: 35px;
+    width: 160px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+nav{
+    width: 70%;
+    height: 120px;
+    font-size:23px;
+    margin: 0px auto 50px auto;
+    position: relative;
+    border-radius: 10px;
+    top: 0px;
+    left: -5%;
+}
+
+nav a {
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    color: inherit; /* Utilise la couleur héritée (définie dans le parent) pour les liens */
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    padding-top: 40px;
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.container {
+    position: relative;
+    top: -4%;
+    left: 5%;
+    overflow: hidden;
+    height: 70%;
+    min-height: 55%;
+    width: 600px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45),
+            0 8px 8px rgba(0, 32, 63, .45);
+}
+
+
+h1 {
+    position: relative;
+    top: -20px;
+    text-align: center; /* Centrage du titre */
+    margin-bottom: 20px; /* Espacement en dessous du titre */
+}
+
+.message-box {
+    background-color: rgb(211, 159, 168);
+    position: relative;
+    top: -10px;
+    left: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50%;
+    height: 500px;
+    padding: 10px;
+    overflow-y: auto;
+    /* max-height: 300px; */
+}
+
+.message {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    word-wrap: break-word; /* ou word-break: break-all; */
+}
+
+.sender {
+    text-align: right;
+}
+
+.receiver {
+    text-align: left;
+}
+
+.message-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    position: relative;
+    top: -10px;
+    left: 398px;
+    width: calc(53% - 22px); /* Largeur du textarea moins les paddings et la bordure */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    resize: none;
+    border-radius: 5px;
+    box-sizing: border-box; /* Assurez-vous que la largeur inclut le padding et la bordure */
+}
+
+input[type="submit"] {
+    position: relative;
+    top: -30px;
+    left: 23%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: pink;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

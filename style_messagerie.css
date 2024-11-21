@@ -1,0 +1,106 @@
+html {
+    background-color: rgb(211, 159, 168);
+}
+
+*{
+    
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+#centre {
+    position: absolute; 
+    background-color: white;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 90%; 
+    height: 80%; 
+    border: 3px solid palevioletred; 
+    border-radius: 10px;
+    top: 5%; 
+    left: 5%; 
+    right: 5%; 
+    bottom: 10%; 
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    
+}
+
+#centre::-webkit-scrollbar {
+    width: 0; 
+}
+
+#zoneEnvoi {
+    position: absolute; 
+    background-color: white;
+    box-sizing: border-box;
+    width: 90%; 
+    height: 5%; 
+    border: 3px solid palevioletred; 
+    border-radius: 10px;
+    left: 5%; 
+    bottom: 5%; 
+}
+
+#postForm {
+    width: 100%; /* Largeur de la balise form égale à 100% de la balise div */
+    height: 100%; /* Hauteur de la balise form égale à 100% de la balise div */
+}
+
+#name1 {
+    width: 90%;
+    height: 100%;
+    left: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    -webkit-autofill: none;
+    -moz-autofill: none;
+    -o-autofill: none; 
+    -ms-autofill: none;
+}
+
+#envoyer {
+    position: absolute;
+    width: 6%; 
+    height: 90%; 
+    top: 5%;
+    right: 1%;
+    border-radius: 50%; 
+    background-color: white; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+}
+
+#retour {
+    border: none; 
+    border-radius: 10px; 
+    background-color: palevioletred; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+
+div.txt {
+    border-radius: 10px; 
+    background-color: pink;  
+    padding: 10px; 
+    margin-bottom: 5px;
+    max-width: 50%;
+    align-self: flex-start;
+    word-break: break-word;
+    display: inline-block;
+}
+
+div.txt p {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+br.sautLigne {
+    margin-bottom:0;
+    display:none;
+}

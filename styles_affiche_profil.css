@@ -1,0 +1,558 @@
+
+html {
+    background-color: rgb(211, 159, 168);
+}
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+#container {
+    position: relative;
+    top: 25px; /* Réglez la position top à 0 pour aligner le container en haut de la page */
+    left: 45px; /* Réglez la position left à 0 pour aligner le container sur la gauche de la page */
+    width: 95%; /* Définissez la largeur du container à 100% pour qu'il prenne toute la largeur de la page */
+    height: 95vh; /* Utilisez 100vh pour spécifier que le container doit prendre 100% de la hauteur de la fenêtre du navigateur */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45), 0 8px 8px rgba(0, 32, 63, .45);
+}
+
+/* Styles pour l'image */
+img {
+    position: absolute;
+    top: -13%;
+    left: 35px;
+    width: 160px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+
+#banniere {
+    position: relative;
+    width: 88%;
+    height: 120px;
+    margin: 0px auto 50px auto;
+    background-color: white;
+    padding-left: 161px;
+    padding-right: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45), 0 8px 8px rgba(0, 32, 63, .45);
+}
+
+nav{
+    width: 70%;
+    height: 120px;
+    font-size:23px;
+    margin: 0px auto 50px auto;
+    position: relative;
+    border-radius: 10px;
+    top: 0px;
+    left: -5%;
+}
+
+nav a {
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    color: inherit; /* Utilise la couleur héritée (définie dans le parent) pour les liens */
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    padding-top: 40px;
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.container {
+    position: relative;
+    top: -4%;
+    left: 5%;
+    overflow: hidden;
+    height: 70%;
+    min-height: 55%;
+    width: 600px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 32, 63, .45),
+            0 8px 8px rgba(0, 32, 63, .45);
+}
+
+
+.form-group {
+    position: relative;
+    top: 2%;
+    margin-bottom: 40px;
+    
+}
+
+#recherche {
+    width: 75%;
+}
+
+.genderSelect {
+    position: relative;
+    top: 10px;
+    background-color: pink;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 15px;
+    margin: 1px;
+    width: 80%;
+    font-size: 15px;
+    margin-left: 60px
+    
+}
+
+.ageCategorySelect{
+    position: relative;
+    top: 10px;
+    left:15%;
+    background-color: pink;
+    border-radius: 20px;
+    border: none;
+    padding: 12px 15px;
+    margin: 1px;
+    width: 20%;
+    font-size: 15px;
+    margin-left: 30px
+}
+
+
+label {
+    position: relative;
+    bottom: 10px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-left: 30px;
+}
+
+select, button {
+    width: 30%;
+    padding: 16px 32px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 50px;
+    margin-left:210px
+}
+
+button {
+    position: absolute;
+    width: 250px;
+    top: 170%;
+    left: -30%;
+    background-color: pink;
+    border-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+button:active {
+    background-color: rgb(248, 3, 44);
+}
+
+h1{
+    margin-top:50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#imagerencontre {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    width: 100%;
+    height: 82vh;
+    display: block;
+    max-width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* bannière abonnement*/
+.banner {
+    position:absolute;
+    top:87%;
+    left: 0px;
+    background-color: pink; /* Couleur rose pour la bannière */
+    width: 100%; /* Prend toute la largeur du site */
+    text-align: center; /* Centrer le contenu */
+    padding: 20px 0; /* Ajouter un peu d'espace autour du texte */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .premium-offer {
+    text-decoration: none; /* Supprimer la soulignement du lien */
+    color: white; /* Couleur du texte en blanc */
+  }
+  
+  .premium-offer h2 {
+    font-size: 24px; /* Taille de la police pour le titre */
+  }
+  
+  .premium-offer p {
+    margin: 5px 0; /* Ajouter un peu d'espace entre les paragraphes */
+  }
+  
+
+  /* barre de recherche*/
+  input[type="text"] {
+    position: relative;
+    bottom: 15px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 12px 15px;
+    margin: 1px;
+    width: 20%;
+    font-size: 15px;
+    left: 2%;
+}
+
+#container_profils {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    width: 100%;
+    height: 82vh;
+    display: block;
+    max-width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    overflow-y: scroll;
+}
+
+.profil {
+    position: relative;
+    left: 31%;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%; /* Modifier la largeur selon vos préférences */
+    height: 70px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    padding: 2%;
+    padding-bottom: 10%;
+}
+
+.image_profil {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    top: 7%;
+    left: 67%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.infos {
+    font-size: 130%;
+    position: absolute;
+    top: 25%;
+}
+
+.additional-info p {
+    width: 50%;
+    margin: auto;
+}
+
+.modal-background {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: rgba(0,0,0,0.4);
+}
+ 
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    color: black;
+    margin: 15% auto;
+    font-size: 150%;
+    padding: 20px;
+    border: 1px solid #888;
+    top: -23%;
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.addition_image_profil {
+    position: absolute;
+    top: 8%;
+    left: 78%;
+    width: 15%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+.addition_image_presentation {
+    position: absolute;
+    top: 42%;
+    left: 41%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Alignement horizontal des images */
+    width: 60%;
+}
+
+.addition_image_presentation h4 {
+    position: absolute;
+    top: 5px;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+}
+
+.addition_image_presentation img {
+    position: relative;
+    top: 42%;
+    left: -1%;
+    margin: 30px;
+    width: 35%; /* Ajuste la taille de l'image pour remplir son conteneur */
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Styles spécifiques pour le bouton "Reporter l'utilisateur" */
+button.report-btn {
+    position: absolute;
+    display: inline-block;
+    top: 180px;
+    left: 38%;
+    background-color: red; /* Couleur de fond bleue */
+    border: 1px solid black;
+    color: white; /* Texte en blanc */
+    padding: 10px 20px; /* Rembourrage */
+    font-size: 16px; /* Taille de la police */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    top: 250px;
+    font-size: 40px;
+}
+
+/* Styles spécifiques pour le bouton "Envoyer un message" */
+button.message-btn {
+    position: absolute;
+    display: inline-block;
+    left: 17%;
+    top: 180px;
+    background-color: pink; /* Couleur de fond rouge */
+    border: 1px solid black;
+    color: white; /* Texte en blanc */
+    padding: 10px 20px; /* Rembourrage */
+    font-size: 16px; /* Taille de la police */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+
+
+
+
+.modal-content h2 {
+    text-align: center;
+}
+ 
+.modal-content p {
+    position: relative;
+    left: 5%;
+    top: 50px;
+    padding-bottom: 2%;
+}
+
+.close-btn {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+ 
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+.hidden {
+    display: none;
+}
+
+.additional-info .description-container {
+    overflow: hidden;
+    max-height: 50px; /* Hauteur maximale du texte */
+    transition: max-height 0.5s ease; /* Animation de transition */
+}
+
+.additional-info .description-container.collapsed {
+    max-height: 0; /* Réduit la hauteur à 0 pour masquer le texte */
+}
+
+.additional-info .toggle-btn {
+    display: block;
+    margin-top: 5px;
+}
+
+textarea {
+    position: relative;
+    width: 25%;
+    bottom: 12px;
+    left: 2%; /* Occuper toute la largeur disponible */
+    height: 100px;
+    padding: 12px 15px; /* Ajouter un espace intérieur */
+    border: 1px solid black; /* Ajouter une bordure */
+    border-radius: 5px; /* Ajouter des coins arrondis */
+    box-sizing: border-box; /* Inclure la bordure et le padding dans la largeur */
+    margin-bottom: 10px; /* Ajouter un espace en bas */
+    font-size: 18px; /* Taille de la police */
+    resize: none;
+}
+
+/* Styles pour le formulaire de signalement */
+#signalement-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.modal-content1 {
+    position: relative;
+    background-color: #fefefe;
+    color: black;
+    margin: 15% auto;
+    font-size: 150%;
+    padding: 20px;
+    border: 1px solid #888;
+    top: -5%;
+    left: 12%;
+    width: 60%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+.modal-content2 {
+    position: relative;
+    background-color: #fefefe;
+    color: black;
+    margin: 15% auto;
+    font-size: 150%;
+    padding: 20px;
+    border: 1px solid #888;
+    bottom: 110px;
+    left: -20px;
+    width: 90%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+#signalement-modal-background {
+    display: none;
+    position: fixed;
+    bottom: 120px;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    z-index: 1000;
+    /* background-color: rgba(0,0,0,0.4); Supprimez cette ligne pour enlever la couleur de fond */
+}
+
+.report-form {
+    position: absolute;
+    bottom: 10;
+    left: 0;
+    z-index: 1000;
+    /* background-color: #fff; Supprimez cette ligne pour enlever la couleur de fond */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#signalement-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#signalement-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#signalement-form button[type="submit"] {
+    position: relative;
+    background-color: pink;
+    color: white;
+    margin-left: 62%;
+    margin-bottom: 1%;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#signalement-form button[type="submit"]:hover {
+    background-color: pink;
+}
+
+/* Styles pour cacher le formulaire */
+#signalement-form[style="display: none;"] {
+    display: none;
+}
+
