@@ -1,4 +1,5 @@
 Etape 0: télécharger le zip du projet et le unzip
+
 Etape 1 (connection BDD): 
   ouvrir un terminal, se placer dans le projet,
   executer la commande : mysql -u web -p
